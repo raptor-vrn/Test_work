@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+    .album .col {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .load, .order {
+        height: 60px;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .container-full {
+        max-width: 1651px;
+    }
+}

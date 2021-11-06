@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro.ttf') format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'DIN Pro Italic';
+    src: url('../fonts/DINPro-Italic.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro-Italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro-Italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro-Italic.ttf') format('truetype')/* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'DIN Pro Bold';
+    src: url('../fonts/DINPro-Bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro-Bold.ttf') format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'DIN Pro Bold Italic';
+    src: url('../fonts/DINPro-BoldItalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro-BoldItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro-BoldItalic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'DIN Pro Medium';
+    src: url('../fonts/DINPro-Medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro-Medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro-Medium.ttf') format('truetype') /* Safari, Android, iOS */
+
+}
+@font-face {
+    font-family: 'DIN Pro Medium Italic';
+    src: url('../fonts/DINPro-MediumItalic.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/DINPro-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/DINPro-MediumItalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/DINPro-MediumItalic.ttf') format('truetype') /* Safari, Android, iOS */
+}
+
+body {
+    font-family: "DIN Pro";
+}
+.l-p-25 {
+    letter-spacing: -0.025em;
+}
+h1 {
+    font-size: 2rem;
+}
+.container {
+    overflow: hidden;
+}
+.card {
+    border: 0;
+}
+.card__title {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: "DIN Pro Bold";
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.open-modal {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: inset 0px -55px 113px 0px rgba(37,54,74,1);
+    -moz-box-shadow: inset 0px -55px 113px 0px rgba(37,54,74,1);
+    box-shadow: inset 0px -55px 113px 0px rgba(37,54,74,1);
+    transition: 0.3s ease;
+}
+.open-modal:hover {
+    box-shadow: none;
+}
+.modal-header {
+    border: 0;
+    justify-content: center;
+}
+.modal__article {
+    text-transform: uppercase;
+    font-family: "DIN Pro Bold";
+
+}
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.load {
+    border: 3px solid #00264c;
+    font-family: "DIN Pro Bold";
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    width: 100%;
+    height: 40px;
+    color: #00264c;
+}
+.load:hover {
+    background: #00264c;
+    color: white;
+}
+.btn:focus {
+    box-shadow: none;
+}
+.footer {
+    background: #0d1b2b;
+}
+.footer__article {
+    font-family: "DIN Pro Bold";
+}
+.footer__phone {
+    font-size: 30px;
+    line-height: 1.3;
+}
+.links__wrapper {
+    border-left: 3px solid #0058a7;
+    padding: 15px 0px 15px 15px;
+    color: #3d95e3;
+}
+.label {
+    display: block;
+    margin-bottom: 0;
+}
+.color__link {
+    color: #3d95e3;
+}
+.form__wrap {
+    width: 100%;
+    border: 5px solid rgba(84,102,130,.33);
+}
+.form-control {
+    background: rgba(84,102,130,.33);
+    border: 0;
+    border-radius: 0;
+    font-family: "DIN Pro Medium";
+    font-size: 15px;
+    height: 54px;
+}
+.form-control:focus {
+    color: rgba(255,255,255,.84);
+}
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-control::-moz-placeholder {
+    color: rgba(255,255,255,.6);
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgba(255,255,255,.6);
+}
+
+.form-control::-ms-input-placeholder {
+    color: rgba(255,255,255,.6);
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,.6);
+}
+.form-control:focus {
+    color: white;
+    background-color: inherit;
+    outline: 0;
+}
+.input-group {
+    margin-bottom: 2px;
+}
+textarea {
+    resize: none
+}
+.policy__link {
+    font-size: 14px;
+    font-family: "DIN Pro Medium";
+    color: #4c89c1;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+.policy__link:hover {
+    text-decoration: none;
+}
+.order {
+    border: 3px solid #fff;
+    font-family: "DIN Pro Bold";
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+.order:hover {
+    background: white;
+    color: #00264c;
+}
+.card .card__text {
+    display: none;
+}
